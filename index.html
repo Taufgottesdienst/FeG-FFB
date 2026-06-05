@@ -74,6 +74,40 @@
     letter-spacing: 2px;
   }
 
+  .taufende {
+    max-width: 480px;
+    margin: 0 auto 36px;
+    padding: 24px 28px;
+    background: var(--warm-white);
+    border: 1px solid var(--gold-light);
+    border-radius: 2px;
+    text-align: center;
+  }
+
+  .taufende-label {
+    font-family: 'Special Elite', cursive;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--sepia);
+    margin-bottom: 14px;
+  }
+
+  .taufende-names {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    color: var(--brown);
+    line-height: 2;
+    font-style: italic;
+  }
+
+  .taufende-names span:not(:last-child)::after {
+    content: ' \00B7';
+    color: var(--gold);
+    font-style: normal;
+    margin: 0 6px;
+  }
+
   /* Song list */
   .song-list {
     max-width: 480px;
@@ -244,6 +278,13 @@
   <p class="header-eyebrow">Singt mit uns</p>
   <h1 class="header-title">Taufgottesdienst<br><em>FeG FFB 2026</em></h1>
   <p class="header-sub">Wähle ein Lied ♪</p>
+</div>
+
+<div class="taufende">
+  <div class="taufende-label">Heute getauft</div>
+  <div class="taufende-names">
+    <span>Sarah</span><span>Jason</span><span>Elias</span><span>Jonathan</span><span>Adelina</span><span>Felicitas</span><span>Konstantin</span><span>Jakob</span>
+  </div>
 </div>
 
 <!-- Song List -->
